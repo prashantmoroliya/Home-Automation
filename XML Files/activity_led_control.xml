@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeAutomation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/appHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TabWidget
+            android:id="@+id/buttonPanelOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appHeading"
+            android:layout_marginTop="16dp"
+            android:background="#84ffffff">
+
+            <ImageButton
+                android:id="@+id/bulb_on"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/bulb"
+                android:src="@drawable/bulb" />
+
+            <ImageButton
+                android:id="@+id/fan_on"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/fan"
+                android:src="@drawable/fan" />
+
+            <ImageButton
+                android:id="@+id/tv_on"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/tv"
+                android:src="@drawable/tv" />
+
+            <ImageButton
+                android:id="@+id/washing_machine_on"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/washing_machine"
+                android:src="@drawable/washing_machine" />
+
+        </TabWidget>
+
+        <TabWidget
+            android:id="@+id/buttonPanelTwo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/buttonPanelOne"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:id="@+id/bulb_off"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/bulb" />
+
+            <ImageButton
+                android:id="@+id/fan_off"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/fan" />
+
+            <ImageButton
+                android:id="@+id/tv_off"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/tv" />
+
+            <ImageButton
+                android:id="@+id/washing_machine_off"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/washing_machine" />
+
+        </TabWidget>
+
+        <LinearLayout
+            android:id="@+id/all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonPanelTwo"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonStart"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/all_on" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/all_off" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/voice_icon"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_layout"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/voice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:onClick="onClick"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            tools:ignore="NestedScrolling" />
+
+        <Button
+            android:id="@+id/disconnect_button"
+            style="?android:attr/buttonStyleInset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voice_icon"
+            android:layout_marginTop="4dp"
+            android:text="@string/disconnect" />
+
+        <Button
+            android:id="@+id/exit_button"
+            style="?android:attr/buttonStyleInset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/disconnect_button"
+            android:text="@string/exit" />
+
+        <Button
+            android:id="@+id/about_button"
+            style="?android:attr/buttonStyleInset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:layout_below="@id/exit_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>
