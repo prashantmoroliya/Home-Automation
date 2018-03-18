@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Home Automation</string>
+    <string name="about">About</string>
+    <string name="brightness">Brightness</string>
+    <string name="bulb">Bulb</string>
+    <string name="washing_machine">Washing Machine</string>
+    <string name="device_control">Device Control</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="fan">Fan</string>
+    <string name="microphone">Microphone</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="paired_device">Paired Device</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_device_control">deviceControl</string>
+    <string name="tv">TV</string>
+    <string name="voice">voice</string>
+    <string name="all_on">All On</string>
+    <string name="all_off">All Off</string>
+    <string name="splash_text">Make your home smart.</string>
+    <string name="exit">Exit</string>
+
+    <string name="name">Prashant Kumar Moroliya</string>
+    <string name="number">+91-9425-13-1169</string>
+    <string name="email">prashantmoroliya@gmail.com</string>
+    <string name="intro">This is Prashant here, I am an Engineer major in Computer Science. I am Star Wars Fan.</string>
+    <string name="tagline">May The Force Be With You.</string>
+    <string name="quote_heading">Quote</string>
+    <string name="quote">Do. or Do not. there is no try.</string>
+</resources>
