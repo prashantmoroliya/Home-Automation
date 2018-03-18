@@ -1,5 +1,8 @@
 package com.homeautomation.android.homeautomation;
 
+//  @author: Darth Vader
+//      May the force be with you.
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
