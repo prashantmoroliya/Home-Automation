@@ -1,0 +1,2 @@
+# Home-Automation
+This is Home Automation project, which is made by me for my Minor Project during my bachelors degree. In this project, I created 4 button which is used to control 4 switches on the board. Then there are 2 special button which is used for all off or all on button. This app is under development as it the first version of app. I might need your help to create this project as best as possible. This is open source software, need to change the world. Let's do it together.
