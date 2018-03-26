@@ -330,7 +330,7 @@ public class HomeAutomation extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == VOICE_RECOGNITION_REQUEST_CODE && resultCode == -1) {
             ArrayList<String> matches = data.getStringArrayListExtra("android.speech.extra.RESULTS");
-            this.mList.setAdapter(new ArrayAdapter<>(this, 17367043, matches));
+            this.mList.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, matches));
             if (matches.contains("information")) {
                 informationMenu();
             }
