@@ -75,7 +75,7 @@ public class DeviceList extends AppCompatActivity {
         } else {
             Toast.makeText(getApplicationContext(), "No Paired Bluetooth Devices Found.", Toast.LENGTH_SHORT).show();
         }
-        this.deviceList.setAdapter(new ArrayAdapter<>(this, 17367043, list));
+        this.deviceList.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list));
         this.deviceList.setOnItemClickListener(this.myListClickListener);
     }
 }
